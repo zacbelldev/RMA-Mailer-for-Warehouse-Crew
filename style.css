@@ -1,0 +1,937 @@
+/*
+
+1) . is for class. # is for id
+2) media queries are below
+3) Favorite colors: BLUE (#3e94ec)
+
+*/
+/*-------------------------------------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+html {
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    background-color: #696d6f;
+    margin:0;
+}
+
+#heading {
+    padding: 20px 0 70px 0;
+}
+
+
+
+#banner {
+    position:fixed;
+    top:0;
+    height:70px;
+    width:100%;
+    background-color: #eaeaea;
+    box-shadow: 0 0 10px 5px #433f40;
+}
+
+#banner img {
+    /*float:left;*/
+    transform:scale(0.75,0.75);
+}
+/*------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/*hamburger icon*/
+.container {
+    position:absolute;
+    top:38px;
+    right:20px;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-35deg) translate(-4px, 6px);
+    transform: rotate(-35deg) translate(-4px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(35deg) translate(-4px, -8px);
+    transform: rotate(35deg) translate(-4px, -8px);
+
+}
+
+
+nav > ul > li div{
+    position:relative;
+    left:100px;
+    bottom:-25px;
+}
+
+/* ------------------------------ */
+
+
+#bodyDiv {
+    /*margin: 150px auto 0;*/
+}
+
+.bar1, .bar2, .bar1 {
+    cursor: pointer;
+}
+
+nav {
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    /*     background: blue; */
+    position:relative;
+    top:-35px;
+    right:25px;
+    display: inline-block;
+}
+
+
+nav > ul {
+    /*     position:relative;
+        top:-35px;
+        right:25px; */
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    /*     background: #ddd; */
+    border-radius: 5px;
+}
+
+
+
+
+nav > ul > li {
+    /*     background: green; */
+    /*     float: left; */
+    text-align:center;
+    /*     border:solid 2px black; */
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    /*     cursor: pointer; */
+}
+
+nav > ul > li {
+    /*     background: green; */
+    /*     float: left; */
+    text-align:center;
+    /*     border:solid 2px black; */
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------NOTHING BELOW TO CHANGE------ */
+#logo{
+
+}
+
+#loginStatus {
+    position:absolute;
+    bottom:-6px;
+    right:250px;
+    font-size:14px;
+}
+
+
+nav > ul > li:hover {
+    /*     border-radius: 5px; */
+}
+
+ul.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+}
+ul.drop-menu li {
+    background: #666;
+    color: rgba(255, 255, 255, 0.7);
+}
+ul.drop-menu li:hover {
+    background: #606060;
+}
+ul.drop-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+    display: none;
+}
+
+li:hover > ul.drop-menu li {
+    display: block;
+}
+
+li:hover > ul.drop-menu.menu-1 {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+li:hover > ul.drop-menu.menu-1 li {
+    opacity: 0;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: -150ms;
+    animation-delay: -150ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 0ms;
+    animation-delay: 0ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 150ms;
+    animation-delay: 150ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 450ms;
+    animation-delay: 450ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+    -webkit-animation-name: menu1;
+    animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes menu1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateY(-90deg) translateY(30px);
+        transform: rotateY(-90deg) translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateY(0deg) translateY(0px);
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+@keyframes menu1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateY(-90deg) translateY(30px);
+        transform: rotateY(-90deg) translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateY(0deg) translateY(0px);
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+/*li:hover > ul.drop-menu.menu-2 {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+li:hover > ul.drop-menu.menu-2 li {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: -150ms;
+    animation-delay: -150ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 0ms;
+    animation-delay: 0ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 150ms;
+    animation-delay: 150ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 450ms;
+    animation-delay: 450ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
+    -webkit-animation-name: menu2;
+    animation-name: menu2;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes menu2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+}
+@keyframes menu2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navBar {
+    height:30px;
+}
+
+#navBar h1 {
+    font-family: Monaco;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color:#fede84;
+}
+
+#footer {
+    border-top: solid #433f40;
+    height:80px;
+    background-color: #eaeaea;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+#homePageContainer {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-bottom: 40px;
+}
+
+#homePageContainer a {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    margin: 20px 20px 20px 20px;
+}
+
+#homePageDiv {
+    padding:15px;
+    flex-grow: 1;
+    border: solid   10px black;
+    background-color: #3e94ec;
+    width: 190px;
+    height: 60px;
+}
+
+#homePageDiv:hover  {
+    background-color: #fede84;
+    color:black;
+    font-size:25px;
+}
+
+#homePageDiv h1 {
+    font-family: "Al Bayan";
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+@media screen and (max-device-width: 500px){
+
+    .diyOrder{
+        background-color: #0AC986 !important;
+    }
+
+    #addAnotherFile, #customerName, #comments {
+        font-size:40px;
+    }
+
+    p {
+        font-size: 50px;
+        color:white;
+    }
+
+    /*input[type=text], select {*/
+        /*!*width: 100%;*!*/
+        /*padding: 12px 20px;*/
+        /*!*margin: 8px 0;*!*/
+        /*!*display: inline-block;*!*/
+        /*!*border: 1px solid #ccc;*!*/
+        /*border-radius: 4px;*/
+        /*box-sizing: border-box;*/
+
+        /*-webkit-appearance: none; -moz-appearance: none;*/
+        /*display: block;*/
+        /*margin: 0;*/
+        /*width: 100%;*/
+        /*height: 140px;*/
+        /*line-height: 40px;*/
+        /*font-size: 45px;*/
+        /*border: 1px solid #bbb;*/
+        /*text-align:center;*/
+    /*}*/
+
+    input[type=text], select, input[type=file] {
+        padding: 12px 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        -webkit-appearance: none; -moz-appearance: none;
+        margin: 40px 0;
+        width: 70%;
+        height: 80px;
+        line-height: 40px;
+        font-size: 45px;
+        border: 1px solid #bbb;
+        text-align:left;
+    }
+
+    textarea {
+        padding: 12px 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        -webkit-appearance: none; -moz-appearance: none;
+        margin: 40px 0;
+        width: 70%;
+        height: 180px;
+        line-height: 40px;
+        font-size: 45px;
+        border: 1px solid #bbb;
+        text-align:left;
+    }
+
+    input[type=submit] {
+        /*         padding:4px; */
+        /*         font-size:12px; */
+        /*width: 100%;*/
+        /*background-color: #4CAF50;*/
+        /*color: white;*/
+        padding: 14px 0 0 0;
+        /*margin: 8px 0;*/
+        /*border: none;*/
+        /*border-radius: 4px;*/
+        cursor: pointer;
+
+
+        -webkit-appearance: none; -moz-appearance: none;
+        display: block;
+        margin: 1.1em 0;
+        font-size: 2.5em; line-height: 2.5em;
+        color: #333;
+        font-weight: bold;
+        height: 4em;
+        text-align:center;
+        width: 100%;
+        background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); background: -o-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); background: -ms-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); background: linear-gradient(to bottom, #fdfdfd 0%,#bebebe 100%);
+        border: 1px solid #bbb;
+        -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+    }
+    input[type=submit] {
+        background:lightgreen;
+    }
+
+    h3{
+        font-size:75px;
+        margin-top:-70px;
+        margin-bottom: 20px;
+    }
+
+    #returnState_Open {
+
+    }
+
+    #returnState_missingItems {
+
+    }
+
+    input[type=checkbox] {
+        width: 44px; height: 44px;
+        -webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
+        border: 1px solid #bbb;
+    }
+
+    /*-------------------------------------------------------------------------------------------------*/
+
+    body {
+        background-color: #696d6f;
+        margin:0;
+    }
+
+    #dealerName {
+        height:8em;
+        width:70%;
+    }
+
+    #salesOrder {
+        height:8em;
+        width:70%;
+    }
+
+    form h1 {
+        font-size: 3em;
+    }
+
+    #start {
+        height:400px;
+        width:400px;
+        background-color:lightgreen;
+        border-radius:10px;
+        margin-top: 40px;
+        margin-right:15px;
+        border: solid black 3px;
+        font-size: 3em;
+    }
+
+    #stop {
+        height:400px;
+        width:400px;
+        background-color:lightcoral;
+        border-radius:10px;
+        margin-top: 40px;
+        margin-left:15px;
+        border: solid black 3px;
+        font-size: 3em;
+    }
+
+    select {
+        height:4em;
+        width:95%;
+        font-size: 3em;
+    }
+
+    label {
+        font-size: 3em;
+    }
+
+    #banner {
+        /*padding-top: 10px;*/
+        /*padding-left: 65px;*/
+        height:150px;
+        background-color: #eaeaea;
+        box-shadow: 0px 0px 40px 10px #433f40;
+
+    }
+
+    #banner img{
+        height:130px;
+    }
+
+    #banner h1 {
+        float:right;
+        padding-right: 25px;
+        padding-top: 40px;
+        font-size: 3em;
+    }
+
+    #navBar {
+        height:30px;
+        padding-left: 60px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #navBar h1 {
+        font-size: 3em;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+
+    #navBar h3 {
+        color:black;
+        font-size: 3em;
+    }
+
+    #navBar a {
+        color:#fede84;
+        font-family: Monaco;
+        text-decoration: none;
+        font-size: 3em;
+    }
+
+    #navBar a:hover {
+        color:#eaeaea;
+    }
+
+    #bodyDiv{
+        margin: 150px auto 0;
+        padding:20px 50px 20px 50px;
+    }
+
+    #footer {
+        border-top: solid #433f40;
+        height:80px;
+        background-color: #eaeaea;
+    }
+
+    /*-------------------------------------------------------------------------------------------------*/
+
+    #homePageContainer {
+        margin:0 10px 0 -15px;
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
+        align-content: flex-start;
+        /*padding-bottom: 40px;*/
+    }
+
+    #homePageContainer a {
+        text-decoration: none;
+        text-align: center;
+        color:white;
+        /*margin: 20px 20px 20px 20px;*/
+        width:100%;
+    }
+
+    /*-----------------------------*/
+
+    #homePageDiv {
+        /*padding:15px;*/
+        flex-grow: 10;
+        border-bottom: solid   10px black;
+        background-color: #3e94ec;
+        width: 100%;
+        height: 200px;
+    }
+
+    #homePageDiv:hover  {
+        background-color: #fede84;
+        color:black;
+        font-size:25px;
+    }
+
+    #homePageDiv h1 {
+        font-family: "Al Bayan";
+        font-size:3em;
+    }
+
+    /*-----------------------------*/
+
+    #homePageDivSeparateColor {
+        /*padding:15px;*/
+        flex-grow: 1;
+        border-bottom: solid   10px black;
+        background-color: #fede84;
+        width: 100%;
+        height: 200px;
+    }
+
+    #homePageDivSeparateColor:hover  {
+        background-color: #3e94ec;
+        color:black;
+        font-size:25px;
+    }
+
+    #homePageDivSeparateColor h1 {
+        font-family: "Al Bayan";
+        font-size: 3em;
+        color:black;
+    }
+
+    /*-------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------------------------*/
+
+
+}
+
+@media screen and (max-width: 350px){
+
+}
+
+@media screen and (max-width: 600px){
+
+}
+
+@media screen and (max-width: 888px){
+
+}
+
+@media screen and (max-width: 1080px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbarStart, #snackbarStop, #snackbarCount {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show {
+    visibility: visible !important; /* Show the snackbar */
+
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+    animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+@media screen and (max-device-width: 500px){
+    #snackbarStop, #snackbarCount, #snackbarStart {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        /*     min-width: 250px; /* Set a default minimum width */
+        width:80%;
+        /*     margin-left: -125px; /* Divide value of min-width by 2 */
+        background-color: #333; /* Black background color */
+        color: #fff; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 2px; /* Rounded borders */
+        padding: 66px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 16%; /* Center the snackbar */
+        bottom: 30px; /* 30px from the bottom */
+        font-size:50px;
+    }
+}
